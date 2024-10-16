@@ -8,9 +8,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 
 const App: React.FC = () => {
-  const location = useLocation(); // Utiliser useLocation ici pour le tracking des routes
+  const location = useLocation(); 
 
-  // Variantes d'animation pour les transitions de page
   const pageTransition = {
     hidden: { opacity: 0, x: -100 },
     visible: { opacity: 1, x: 0, transition: { duration: 0.6 } },
@@ -21,8 +20,8 @@ const App: React.FC = () => {
     <div className="flex flex-col min-h-screen">
       <Header />
       <main className="flex-grow">
-        <AnimatePresence mode="wait" initial={false}> {/* "exitBeforeEnter" remplacé par mode="wait" */}
-          <Routes location={location} key={location.pathname}> {/* Key pour activer les animations */}
+        <AnimatePresence mode="wait" initial={false}>
+          <Routes location={location} key={location.pathname}>
             <Route
               path="/"
               element={
