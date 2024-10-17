@@ -23,13 +23,13 @@ const Contact: React.FC = () => {
                 variants={textVariant}
                 className="text-3xl mb-4 font-lora text-darker"
             >
-                Contactez-Nous
+                Contact Us
             </motion.h2>
             <motion.p
                 variants={textVariant}
                 className="text-lg"
             >
-                Si vous avez des questions ou souhaitez discuter d'un projet, n'hésitez pas à nous contacter.
+                If you have any questions or would like to discuss a project, please do not hesitate to contact us.
             </motion.p>
             <motion.div
                 variants={imageVariant}
