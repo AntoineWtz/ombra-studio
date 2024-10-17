@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import paysage9 from '../assets/img/paysage9.jpg';
 
 const Home: React.FC = () => {
+    const [hasAnimated, setHasAnimated] = useState(false);
+
+    useEffect(() => {
+        // L'animation se déclenchera dès que l'utilisateur arrive sur la page
+        setHasAnimated(true);
+    }, []);
+
     const textVariant = {
         hidden: { opacity: 0, y: 50 },
         visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' } },
     };
 
     const imageVariant = {
-        hidden: { opacity: 0, scale: 1.2, x: "-50%" },
+        hidden: { opacity: 0, scale: 1.2, x: "-10%" },
         visible: {
             opacity: 1,
             scale: 1,
@@ -17,15 +24,15 @@ const Home: React.FC = () => {
             transition: {
                 duration: 2,
                 ease: 'easeInOut',
-                when: "beforeChildren"
-            }
+                when: "beforeChildren",
+            },
         },
     };
 
     return (
         <motion.div
             initial="hidden"
-            animate="visible"
+            animate={hasAnimated ? "visible" : "hidden"} // Utiliser l'état pour déclencher l'animation au montage
             exit="hidden"
             className="relative h-screen w-full overflow-hidden"
         >
