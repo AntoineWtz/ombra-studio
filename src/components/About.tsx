@@ -23,13 +23,13 @@ const About: React.FC = () => {
                 variants={textVariant}
                 className="text-3xl mb-4 font-lora text-darker"
             >
-                À Propos de Nous
+                About Us
             </motion.h2>
             <motion.p
                 variants={textVariant}
                 className="text-lg"
             >
-                Notre studio s'engage à transformer vos idées en réalité. Avec une approche centrée sur l'humain, nous nous efforçons de créer des environnements uniques et inspirants.
+                Our studio is committed to turning your ideas into reality. With a human-centred approach, we strive to create unique and inspiring environments.
             </motion.p>
             <motion.div
                 variants={imageVariant}

@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                     variants={textVariant}
                     className="text-xl text-dark"
                 >
-                    Des espaces qui reflètent votre vie
+                    Spaces that reflect your life
                 </motion.p>
             </motion.div>
         </motion.div>
