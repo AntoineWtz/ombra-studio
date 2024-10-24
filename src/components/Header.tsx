@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo-ombra-studio-TR.png';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; // Icônes pour le menu burger et la croix
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; 
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
