@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import paysage9 from '../assets/img/paysage9.jpg';
+import logo from '../assets/logo-ombra-studio-TR.png';
 
 const Home: React.FC = () => {
     const [hasAnimated, setHasAnimated] = useState(false);
 
     useEffect(() => {
-        // L'animation se déclenchera dès que l'utilisateur arrive sur la page
         setHasAnimated(true);
     }, []);
 
@@ -32,7 +32,7 @@ const Home: React.FC = () => {
     return (
         <motion.div
             initial="hidden"
-            animate={hasAnimated ? "visible" : "hidden"} // Utiliser l'état pour déclencher l'animation au montage
+            animate={hasAnimated ? "visible" : "hidden"}
             exit="hidden"
             className="relative h-screen w-full overflow-hidden"
         >
@@ -53,12 +53,13 @@ const Home: React.FC = () => {
                 >
                     Ombra Studio
                 </motion.h2>
-                <motion.p
+                <motion.h2
                     variants={textVariant}
                     className="text-xl text-dark"
                 >
                     Spaces that reflect your life
-                </motion.p>
+                </motion.h2>
+                <img src={logo} alt="Ombra Studio Logo" className="h-32 absolute top-24" />
             </motion.div>
         </motion.div>
     );
