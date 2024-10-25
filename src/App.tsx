@@ -1,14 +1,15 @@
 import React from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 const App: React.FC = () => {
-  const location = useLocation(); 
+  const location = useLocation();
 
   const pageTransition = {
     hidden: { opacity: 0, x: -100 },
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <Header />
       <main className="flex-grow">
         <AnimatePresence mode="wait" initial={false}>
+          <ScrollToTop />
           <Routes location={location} key={location.pathname}>
             <Route
               path="/"
