@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo-ombra-studio-TR.png';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; 
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
     return (
         <header className="bg-primary shadow">
-            <nav className="flex justify-between items-center font-poppins px-8">
+            <nav className="flex justify-between items-center font-poppins px-8 text-lg font-light">
                 {/* Logo */}
                 <div className="flex justify-center">
                     <Link to="/">
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
                 </div>
 
                 {/* Navbar - Masquée en mobile/tablette */}
-                <ul className={`hidden lg:flex space-x-12`}>
+                <ul className={`hidden lg:flex space-x-20`}>
                     <li>
                         <Link to="/" className="text-darker hover:text-dark">Home</Link>
                     </li>
