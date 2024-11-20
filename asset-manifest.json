@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ombra-studio/static/css/main.cf3a491d.css",
-    "main.js": "/ombra-studio/static/js/main.ee4a1012.js",
+    "main.js": "/ombra-studio/static/js/main.8e9f97c2.js",
     "static/js/453.6f7904e3.chunk.js": "/ombra-studio/static/js/453.6f7904e3.chunk.js",
     "static/media/portrait2.jpg": "/ombra-studio/static/media/portrait2.96be8c875ac685cee8cc.jpg",
     "static/media/portrait4.jpg": "/ombra-studio/static/media/portrait4.c2e30102e8a0926d60b8.jpg",
@@ -20,11 +20,11 @@
     "static/media/logo-ombra-studio-TR.png": "/ombra-studio/static/media/logo-ombra-studio-TR.4f2dab8f20a28d52f9bd.png",
     "index.html": "/ombra-studio/index.html",
     "main.cf3a491d.css.map": "/ombra-studio/static/css/main.cf3a491d.css.map",
-    "main.ee4a1012.js.map": "/ombra-studio/static/js/main.ee4a1012.js.map",
+    "main.8e9f97c2.js.map": "/ombra-studio/static/js/main.8e9f97c2.js.map",
     "453.6f7904e3.chunk.js.map": "/ombra-studio/static/js/453.6f7904e3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf3a491d.css",
-    "static/js/main.ee4a1012.js"
+    "static/js/main.8e9f97c2.js"
   ]
 }
